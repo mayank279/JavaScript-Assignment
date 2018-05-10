@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+	<link rel="stylesheet" type="text/css" href="myProfile.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+		<div class="container"> 
+			<form class="form-horizontal" role="form">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Profile</div>
+				<div class="panel-body">
+					<div class="form-group">
+						<label for="firstName" class="col-md-4 control-label">First Name:</label>
+						<div class="col-md-8 ">
+							<input id="firstName" type="text" class="form-control" name="firstName" >
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="lastName" class="col-md-4 control-label">Last Name:</label>
+						<div class="col-md-8 ">
+							<input id="lastName" type="text" class="form-control" name="lastName">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="gender" class="col-md-4 control-label">Gender:</label>
+						<div class="col-md-8 ">
+							<select class="form-control" id="gender"> 
+								<optgroup>
+									<option>Male</option>
+									<option>Female</option>
+								</optgroup>
+							</select>
+						</div>
+						
+					</div>
+					<div class="form-group">
+						<label for="addressLine1" class="col-md-4 control-label">Address Line 1:</label>
+						<div class="col-md-8 ">
+					 		<input id="addressLine1" type="text" class="form-control" name="addressLine1" placeholder="Address Line 1">
+					 	</div>
+					</div>
+					<div class="form-group">
+						<label for="addressLine2" class="col-md-4 control-label">Address Line 2:</label>
+						<div class="col-md-8 ">
+							<input id="addressLine2" type="text" class="form-control" name="addressLine2" placeholder="Address Line 2">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-8 col-md-offset-4">
+							 <button type="button" class="btn btn-primary btn-block" id="update">Update</button>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+				</form>
+		</div>
+
+
+</body>
+</html>
