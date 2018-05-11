@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add New</title>
+	<link rel="stylesheet" type="text/css" href="../css/myProfile.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/addToDoItem.js"></script>
+</head>
+<body>
+	<div class="page-header" >
+		<h1>&nbsp;&nbsp;To Do App</h1>      
+	</div>
+	<div class="container"> 
+		<form class="form-horizontal" role="form">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Add an item</div>
+			<div class="panel-body">
+				<div class="form-group">
+					<label for="description" class="col-md-4 control-label">Brief Description:</label>
+					<div class="col-md-8 ">
+						<input id="description" type="text" class="form-control" name="description" >
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="date" class="col-md-4 control-label">Date:</label>
+					<div class="col-md-8 ">
+						<input id="date" type="date" class="form-control" name="date" >
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="category" class="col-md-4 control-label">Category:</label>
+					<div class="col-md-8 ">
+						<label class="checkbox-inline"><input type="checkbox" value="highPriority">High Priority:</label>
+						<label class="checkbox-inline"><input type="checkbox" value="lowPriority">Low Priority:</label>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="markAsDone" class="col-md-4 control-label">Mark as done:</label>
+					<div class="col-md-8 ">
+						<select class="form-control" id="markAsDone"> 
+							<optgroup>
+								<option>Yes</option>
+								<option>No</option>
+							</optgroup>
+						</select>
+					</div>
+					
+				</div>
+				<div class="form-group">
+					<label for="isReminder" class="col-md-4 control-label">Want to set a reminder?</label>
+					<div class="col-md-8">
+						<select class="form-control" id="isReminder"> 
+							<optgroup>
+								<option>Yes</option>
+								<option>No</option>
+							</optgroup>
+						</select>
+				 	</div>
+				</div>
+				<div class="form-group">
+					<label for="reminderDate" class="col-md-4 control-label">Reminder Date:</label>
+					<div class="col-md-8 ">
+						<input id="reminderDate" type="date" class="form-control" name="reminderDate" >
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="isPublic" class="col-md-4 control-label">Public:</label>
+					<div class="col-md-8 ">
+						<label class="radio-inline"><input type="radio" id="isPublicYes" name="isPublic">yes</label>
+						<label class="radio-inline"><input type="radio" id="isPublicNo" name="isPublic">no</label>
+					</div>
+				</div>
+				
+				<!--<div class="form-group">
+			        <label class="col-md-4 control-label">Upload Image:</label>
+			        <div class="col-md-8 ">
+
+				            <span class="input-group-btn col-md-8">
+				                <span class="btn btn-default btn-file">
+				                    Browse… <input type="file" id="imgInp">
+				                </span>
+				            </span>
+
+				        <img id='img-upload'/>
+			    	</div>
+			    </div>-->
+			    <div class="form-group">
+			    	<label class="col-md-4 control-label">Upload Image:</label>
+			        <div class="col-md-8 ">
+					   
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-8 col-md-offset-4">
+						 <button type="button" class="btn btn-primary btn-block" onclick="addItem()" id="add">Add</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+			</form>
+	</div>
+
+
+</body>
+</html>
